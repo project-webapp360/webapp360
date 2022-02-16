@@ -1,0 +1,28 @@
+<nav class="z-depth-0">
+    <div class="nav-wrapper light-blue lighten-3">
+        <a href="/app/main" class="brand-logo">WebApp360</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            {{#ifeq user.role 'ADMIN'}}
+                {{#if isRegistration}}
+                    <li class="active"><a href="/app/registration">Регистрация</a></li>
+                {{else}}
+                    <li><a href="/app/registration">Регистрация</a></li>
+                {{/if}}
+
+            {{/ifeq}}
+
+            <li>
+                <form action="/auth/logout" method="post">
+
+                    <input id="email" name="email" type="hidden" value="{{user.email}}">
+
+                    <input id="password" name="password" type="hidden" {{user.password}}>
+
+                    <button type="submit" y>Выйти</button>
+                </form>
+            </li>
+
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+    <style>
+        .super {
+            height: 100vh;
+        }
+        .form-border {
+            box-shadow: 0px 4px 20px 10px rgba(129, 212, 250, 0.25);
+            padding: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="super valign-wrapper center ">
+        <div class="row form-border" >
+            <form class="col s12" action="/auth/login" method="post">
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" class="validate">
+                        <label for="password">Пароль</label>
+                    </div>
+                </div>
+
+                <button class="btn z-depth-0 light-blue lighten-3 waves-effect waves-light" type="submit">Войти</button>
+            </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <form action="/auth/login" class="form" method="post">
+
+        <h1 class="form__title">Вход</h1>
+
+        <div class="form__group">
+            <input id="username" name="username" class="form__input" type="text" >
+            <label for="username" class="form__label">Логин</label>
+        </div>
+
+        <div class="form__group">
+            <input id="password" name="password" class="form__input" type="text" >
+            <label for="password" class="form__label">Пароль</label>
+        </div>
+
+        <button class="form__button" type="submit">Войти</button>
+
+    </form>
+
+&lt;!&ndash;    <a href="/app/main">Next</a>&ndash;&gt;
+</div>
+</body>
+</html>-->
